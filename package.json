@@ -1,0 +1,21 @@
+{
+    "name": "vitis-component-template",
+    "version": "1.0.0",
+    "keywords": [
+      "low-code"
+    ],
+    "description": "低代码组件模板",
+    "engines": {
+      "node": ">=14"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/react-low-code/vitis-component-template.git"
+    },
+    "author": {
+      "email": "1395294694@qq.com",
+      "name": "heyu"
+    },
+    "license": "ISC"
+  }
+  
