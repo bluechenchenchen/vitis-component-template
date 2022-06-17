@@ -21,7 +21,26 @@ async function run() {
               icon: componentConfig.icon || '',
               description,
               version: version || '0.0.0',
-              props: asset ? asset.props: ''
+              props: asset ? asset.props: '',
+              component: {
+                // 该组件是否是容器
+                isContainer: false,
+                // 该组件的嵌套规则
+                nestingRule: {
+                    // 父级组建
+                    parentWhitelist: ['LayoutColumn'],
+                    // 子组建
+                    childWhitelist: []
+                }
+              },
+              supports: {
+                // 是否支持样式设置
+                styles: true,
+                // 是否支持校验规则
+                validation: false,
+                // 是否支持联动
+                linkage: false,
+              },
             },
             null,
             2,

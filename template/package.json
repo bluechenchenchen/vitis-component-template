@@ -8,7 +8,6 @@
     "test": "umi-test",
     "test:coverage": "umi-test --coverage",
     "genAsset": "node scripts/genAsset.mjs",
-    "preupload": "npm run genAsset",
     "upload": "node scripts/upload.mjs"
   },
   "module": "es/index.js",
