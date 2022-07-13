@@ -4,10 +4,10 @@ import { render, screen } from '@testing-library/react';
 import Component from './component';
 
 describe('<Component />', () => {
-  it('render Foo with dumi', () => {
-    const msg = 'dumi';
+  it('render Component with 在这里定义组件', () => {
+    const msg = '在这里定义组件';
 
-    render(<Component />);
+    render(<Component size='small'/>);
     expect(screen.queryByText(msg)).toBeInTheDocument();
   });
 });
