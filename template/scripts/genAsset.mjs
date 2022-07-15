@@ -18,7 +18,7 @@ async function run() {
             {
               componentName: componentConfig.name,
               title: componentConfig.title,
-              icon: componentConfig.icon || '',
+              iconUrl: componentConfig.iconUrl || '',
               description,
               version: version || '0.0.0',
               props: asset ? asset.props: '',
