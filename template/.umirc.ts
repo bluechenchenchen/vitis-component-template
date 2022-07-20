@@ -7,7 +7,6 @@ export default defineConfig({
     htmlSuffix: true 
   },
   webpack5: {},
-  menus: {},
   publicPath: process.env.NODE_ENV === 'production' ? './' : '/',
   base: '{{projectName}}'
   // more config: https://d.umijs.org/config

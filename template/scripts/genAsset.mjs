@@ -7,7 +7,7 @@ async function run() {
     const asset = await materialParser.default(componentPath, {
         workDir: process.cwd()
     })
-    const { componentConfig, version, description } = JSON.parse(fs.readFileSync( resolve(process.cwd(), 'package.json'), {encoding: 'utf-8'} ))
+    const { componentConfig, version, description, name } = JSON.parse(fs.readFileSync( resolve(process.cwd(), 'package.json'), {encoding: 'utf-8'} ))
 
     const assetPath = resolve(process.cwd(), 'asset', 'index.json')
     fs.ensureFileSync(assetPath)
@@ -17,6 +17,7 @@ async function run() {
         JSON.stringify(
             {
               componentName: componentConfig.name,
+              packageName: name,
               title: componentConfig.title,
               iconUrl: componentConfig.iconUrl || '',
               description,
