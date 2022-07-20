@@ -1,5 +1,5 @@
 {
-  "name": "{{projectName}}",
+  "name": "vitis-component-packages",
   "private": true,
   "workspaces":[
     "packages/*"
