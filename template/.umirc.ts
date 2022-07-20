@@ -1,13 +1,16 @@
-import { defineConfig } from 'dumi';
+import { defineConfig } from 'umi';
 
 export default defineConfig({
-  title: '{{componentTitle}}',
-  outputPath: 'docs',
-  exportStatic: { 
-    htmlSuffix: true 
+  title: '预览',
+  outputPath: 'dist',
+  publicPath: '/',
+  exportStatic: undefined,
+  nodeModulesTransform: {
+    type: 'none',
   },
-  webpack5: {},
-  publicPath: process.env.NODE_ENV === 'production' ? './' : '/',
-  base: '{{projectName}}'
-  // more config: https://d.umijs.org/config
+  base: '/',
+  routes: [
+    { path: '/', component: '@/index' },
+  ],
+  fastRefresh: {},
 });
