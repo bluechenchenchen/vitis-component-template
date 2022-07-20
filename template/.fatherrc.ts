@@ -1,5 +1,4 @@
 export default {
-  esm: 'babel',
   umd: {
     file: 'index'
   },
