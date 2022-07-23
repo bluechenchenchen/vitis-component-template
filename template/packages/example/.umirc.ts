@@ -6,8 +6,8 @@ export default defineConfig({
   exportStatic: { 
     htmlSuffix: true 
   },
+  mode: 'site',
   webpack5: {},
   publicPath: process.env.NODE_ENV === 'production' ? './' : '/',
-  base: '{{projectName}}'
   // more config: https://d.umijs.org/config
 });
