@@ -41,6 +41,8 @@ async function run() {
                   validation: false,
                   // 是否能配置联动规则
                   linkage: false,
+                  // 支持的事件列表
+                  events: ['onClick']
                 },
                 // 该组件是否是容器，比如 table 就是一个容器，它能单独从接口中获取自己的数据源
                 isContainer: false,
