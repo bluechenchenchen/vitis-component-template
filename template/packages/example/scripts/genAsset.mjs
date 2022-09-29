@@ -8,7 +8,7 @@ async function run() {
         workDir: process.cwd()
     })
 
-    const assetPath = resolve(process.cwd(), 'asset4', 'index.json')
+    const assetPath = resolve(process.cwd(), 'asset', 'index.json')
     fs.ensureFileSync(assetPath)
     fs.writeFileSync(
         assetPath, 
