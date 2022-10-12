@@ -4,38 +4,16 @@
 vitis-cli add
 ```
 
-## 关于组件开发
-
-运行如下命令启动项目
+## 开发属性设置器
 
 ```dotnetcli
-yarn i // 首次启动
-yarn start
+vitis-cli setter
 ```
 
-组件的入口位于 src/index.ts，建议不要修改该文件中的内容。组件的实现写在 src/component.tsx 中。
+## 预览组件
 
-## 关于组件文档
-
-组件文档位于 src/README.md 中，本项目使用[dumi](https://d.umijs.org/zh-CN) 作为组件开发的文档工具，dumi 背后的类型解析工具是 react-docgen-typescript，更多类型和注解的用法可参考[它的文档](https://github.com/styleguidist/react-docgen-typescript#example)。
-
-## 关于组件描述协议
-
-组件的描述协议是为了让低代码编辑器识别出组件的 props 以及每个 prop 对应的配置面板描述，它来告诉低代码搭建系统，组件接受哪些属性，又是该用怎样的方式来配置这些属性。
-
-执行如下命令生成组件描述协议。
+这里的预览组件指的是将该 Monorepo 项目中的组件集成到低代码引擎中，预览组件在低代码引擎中的运行情况，这一步通常在组件开发完成之后进行，要预览组件必须先为组件生成组件规格，关于如何生成组件规格请查看组件的 README.md 文件。
 
 ```dotnetcli
-yarn genAsset
+yarn preview
 ```
-
-生成组件描述协议之后，运行 yarn preview 查看生成的结果与实际情况不符合，如果不符合可进行修改。
-
-## 关于组件上传
-
-组件必须上传到组件市场才能被低代码编辑器使用，在上传组件之前务必先生成组件描述协议，并保证组件描述协议无误。执行如下命令上传组件：
-
-```dotnetcli
-yarn upload
-```
-

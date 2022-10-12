@@ -6,8 +6,7 @@
   ],
   "scripts": {
     "preview": "PORT=5556 umi dev",
-    "postinstall": "lerna bootstrap --ignore-scripts",
-    "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\""
+    "postinstall": "lerna bootstrap --ignore-scripts"
   },
   "gitHooks": {
     "pre-commit": "lint-staged"
