@@ -7,7 +7,7 @@ describe('<Component />', () => {
   it('render Component with 在这里定义组件', () => {
     const msg = '在这里定义组件';
 
-    render(<Component/>);
+    render(<Component text={msg}/>);
     expect(screen.queryByText(msg)).toBeInTheDocument();
   });
 });
