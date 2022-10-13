@@ -1,5 +1,7 @@
 # {{projectName}}
 
+这是一个{{componentTitle}}
+
 ## Demo:
 
 ```tsx
