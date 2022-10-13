@@ -3,11 +3,15 @@ import styles from './index.scss'
 
 interface Props {
     /**
-     * 组件尺寸
+     * 组件样式
      */
-    size: 'small' | 'middle' | 'large'
+     style?: React.CSSProperties;
+     /**
+      * 显示的文本
+      */
+     text: React.ReactNode
 }
 
 export default function (props: Props) {
-    return <div className={styles.text}>在这里定义组件</div>
+    return <div className={styles.text} style={props.style}>{props.text}</div>
 }

@@ -43,7 +43,7 @@
     "@umijs/plugin-sass": "^1.1.1",
     "chalk": "^4.1.2",
     "typescript": "4.2.3",
-    "vitis-material-parser": "^2.1.0",
+    "vitis-material-parser": "^2.1.1",
     "cross-spawn-promise": "^0.10.2",
     "axios": "^0.27.2"
   },
@@ -58,11 +58,12 @@
   "componentConfig": {
     "name": "{{componentName}}",
     "title": "{{componentTitle}}",
-    "iconUrl": ""
+    "iconUrl": "https://unpkg.com/{{projectName}}@latest/img/icon.png"
   },
   "files": [
     "dist",
     "docs",
-    "asset"
+    "asset",
+    "img"
   ]
 }
