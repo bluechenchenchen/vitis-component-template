@@ -12,6 +12,6 @@ interface Props {
      text: React.ReactNode
 }
 
-export default function (props: Props) {
-    return <div className={styles.text} style={props.style}>{props.text}</div>
-}
+export default React.forwardRef(function (props: Props, ref: React.ForwardedRef<HTMLDivElement>) {
+    return <div className={styles.text} style={props.style} ref={ref}>{props.text}</div>
+})
